@@ -1,8 +1,9 @@
 import logging, os
 
-LOGGER_FORMAT = os.environ.get('LOGGER_FORMAT', f'%(asctime)s - \
-    %(levelname)s - [%(name)s => %(filename)s => \
-    %(funcName)s(%(lineno)d)] - %(message)s')
+LOGGER_FORMAT = os.environ.get(
+    'LOGGER_FORMAT',
+    '%(asctime)s - %(levelname)s - [%(name)s => %(filename)s => '
+    '%(funcName)s(%(lineno)d)] - %(message)s')
 
 
 def get_file_handler():
