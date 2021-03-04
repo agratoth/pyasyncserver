@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='pyasyncserver',
     zip_safe=True,
-    version='0.1.0',
+    version='0.1.5',
     description='Modular asynchronous application service',
     url='https://github.com/agratoth/pyasyncserver',
     maintainer='Anton Berdnikov',
@@ -12,6 +12,9 @@ setup(
     packages=[
         'pyasyncserver',
         'pyasyncserver.core',
+        'pyasyncserver.core.logger',
+        'pyasyncserver.apps',
+        'pyasyncserver.pipes'
     ],
     package_dir={'pyasyncserver': 'pyasyncserver'},
     install_requires=[
